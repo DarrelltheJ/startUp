@@ -1,0 +1,96 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Smooch Sans', impact;
+	background-color: black;
+}
+
+.content {
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+
+.parallax {
+	width: 100%;
+	background-image: url("dhsaedit.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*keeps images full sized, centered, regardless of viewport size*/
+	background-attachment: fixed;
+	/*final property for parallax effect*/
+	min-height: 80%;
+}
+
+ /* Turn off parallax scrolling for all tablets and phones since effect sometimes causes problems */
+@media only screen and (max-device-width: 320px) {
+	.parallax {
+    	background-attachment: scroll;
+  	}
+}
+
+.row.leftbuffer {
+  		margin-left: .1em;
+}
+
+header {
+	display: flex;
+}
+
+header > h1 {
+	margin: 3em 0em;
+	font-size: 3em;
+	color: whitesmoke;
+	background-color: #ad070c;
+	width: fit-content;
+	padding: 0px 10px;
+}
+
+.headline {
+	padding: 2rem 0rem;
+}
+
+button-custom {
+	padding: 1rem 2rem;
+	border-radius: 200px;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+button-custom:hover {
+	transform: scale(1.5);
+	background-color: orangered;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #ad070c;
+    max-width: 65px;
+    opacity: 1;  
+}
+
+.tocome {
+	width: 100%;
+	background-color: whitesmoke;
+	padding: 3em;
+	font-size: 1.5rem;
+}
+
+.clearfix > img {
+	padding-left: 1rem;
+}
+
+.tagline {
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#080979+0,466aff+17,466aff+17,2989d8+36,8f36ef+80,5936ad+100 */
+	background: #080979; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #080979 0%, #466aff 17%, #466aff 17%, #2989d8 36%, #8f36ef 80%, #5936ad 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #080979 0%,#466aff 17%,#466aff 17%,#2989d8 36%,#8f36ef 80%,#5936ad 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #080979 0%,#466aff 17%,#466aff 17%,#2989d8 36%,#8f36ef 80%,#5936ad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080979', endColorstr='#5936ad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
